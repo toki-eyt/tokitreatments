@@ -36,6 +36,9 @@ body {
 ol, ul {
 	list-style: none;
 }
+a {
+	color: inherit !important;
+}
 
 blockquote, q {
 	quotes: none;
@@ -73,15 +76,21 @@ input, select, textarea {
 }
 
 .image.in-text img{
-	height: 250px;
-	width: auto;
+	height: auto;
+	width: 100%;
 }
 .image.in-text {
 	float: left;
+	width: 40%;
 	margin-right: 15px;
 	/* margin-bottom: 15px; */
 }
-
+.card{
+	background-color: transparent !important;
+}
+.card-body{
+	background-color: transparent;
+}
 
 /* Basic */
 
@@ -151,7 +160,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #ffffff !important;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
@@ -173,7 +182,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #ffffff !important;
 		font-weight: 600;
 	}
 
@@ -186,7 +195,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #ffffff !important;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -1560,6 +1569,10 @@ input, select, textarea {
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
 			opacity: 0;
+		}
+
+		#main article#posts{
+			width: 80%;
 		}
 
 			#main article.active {
